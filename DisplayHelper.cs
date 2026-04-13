@@ -22,34 +22,41 @@ namespace CybersecurityChatbot
         // ── ASCII Art Logo ────────────────────────────────────────────────
         
         public static void ShowAsciiLogo()
-        {
-            Console.WriteLine();
-
-            // ── "CYBER" word ──────────────────────────────────────────────
+{
+    Console.Clear();
             Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine(@"   ______  __  __  ____  ____  ____    ____   ___  ____  ");
-            Console.WriteLine(@"  / ___\ \/ / |  _ \| __|  _ \| __ )  / __ \ / __|_   _| ");
-            Console.WriteLine(@" | |    >  <  | |_) | _| | |_) |  _ \ | |  | | (__  | |   ");
-            Console.WriteLine(@"  \___ /_/\_\ |____/|___||____/|_| \_\ \____/ \___| |_|   ");
+            Console.WriteLine(@"  _____ __   __ ____  ______ _____ ");
+            Console.WriteLine(@" / ____|\ \ / /|  _ \|  ____|  __ \");
+            Console.WriteLine(@"| |      \ V / | |_) | |__  | |__) |");
+            Console.WriteLine(@"| |       > <  |  _ <|  __| |  _  /");
+            Console.WriteLine(@"| |____  / . \ | |_) | |____| | \ \");
+            Console.WriteLine(@" \_____|/_/ \_\|____/|______|_|  \_\");
             Console.WriteLine();
 
-            // ── "SECURITY" word ───────────────────────────────────────────
-            Console.ForegroundColor = ConsoleColor.DarkCyan;
-            Console.WriteLine(@"   ____  _____  ____  _   _  ____  ___  ____  _  _  ");
-            Console.WriteLine(@"  / ___||_   _||  _ \ | | | |/ ___||_ _||_  _|| \| | ");
-            Console.WriteLine(@"  \___ \  | |  | |_) n| | | | |     | |  _| | | .` | ");
-            Console.WriteLine(@"   ___) | | |  |  _ < | |_| | |___  | | / __| | |\  | ");
-            Console.WriteLine(@"  |____/  |_|  |_| \_\ \___/ \____||___||____||_| \_| ");
-            Console.WriteLine();
+    Console.ForegroundColor = ConsoleColor.DarkCyan;
 
-            // ── "BOT" word ────────────────────────────────────────────────
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine(@"   ____   ___  _____  ");
-            Console.WriteLine(@"  | __ ) / _ \|_   _| ");
-            Console.WriteLine(@"  |  _ \| | | | | |   ");
-            Console.WriteLine(@"  | |_) | |_| | | |   ");
-            Console.WriteLine(@"  |____/ \___/  |_|   ");
-            Console.WriteLine();
+    Console.WriteLine(@"   _____                      _ _         ");
+    Console.WriteLine(@"  / ____|                    (_) |        ");
+    Console.WriteLine(@" | (___   ___  ___ _   _ _ __ _| |_ _   _ ");
+    Console.WriteLine(@"  \___ \ / _ \/ __| | | | '__| | __| | | |");
+    Console.WriteLine(@"  ____) |  __/ (__| |_| | |  | | |_| |_| |");
+    Console.WriteLine(@" |_____/ \___|\___|\__,_|_|  |_|\__|\__, |");
+    Console.WriteLine(@"                                     __/ |");
+    Console.WriteLine(@"                                    |___/  ");
+    Console.WriteLine();
+
+    Console.ForegroundColor = ConsoleColor.Green;
+
+    Console.WriteLine(@"   _____ _           _   ____        _   ");
+    Console.WriteLine(@"  / ____| |         | | |  _ \      | |  ");
+    Console.WriteLine(@" | |    | |__   __ _| |_| |_) | ___ | |_ ");
+    Console.WriteLine(@" | |    | '_ \ / _` | __|  _ < / _ \| __|");
+    Console.WriteLine(@" | |____| | | | (_| | |_| |_) | (_) | |_ ");
+    Console.WriteLine(@"  \_____|_| |_|\__,_|\__|____/ \___/ \__|");
+    Console.WriteLine();
+
+    Console.ResetColor();
+
 
             // ── Shield graphic ────────────────────────────────────────────
             Console.ForegroundColor = ConsoleColor.Green;
