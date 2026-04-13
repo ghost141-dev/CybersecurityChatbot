@@ -20,11 +20,14 @@ jobs:
       - name: Setup NuGet
         uses: NuGet/setup-nuget@v1
 
-      - name: Restore NuGet packages
-        run: nuget restore CybersecurityChatbot/CybersecurityChatbot.csproj
+      - name: Restore NuGet packages (solution)
+        run: nuget restore CybersecurityChatbot.sln
 
-      - name: Build project with MSBuild
-        run: msbuild CybersecurityChatbot/CybersecurityChatbot.csproj /p:Configuration=Release
+      - name: Show MSBuild location
+        run: where msbuild || echo "msbuild not on PATH"
+
+      - name: Build solution with MSBuild
+        run: msbuild CybersecurityChatbot.sln /p:Configuration=Release /m
 
       # 5. Confirm build succeeded
       - name: Confirm build success
