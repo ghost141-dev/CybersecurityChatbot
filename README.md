@@ -109,7 +109,7 @@ Every push to `main`/`master` automatically:
 
 ## 🎬 Video Presentation
 
-> 📹 [Watch the Part 1 Presentation on YouTube](https://youtu.be/YOUR_LINK_HERE)
+> 📹 [Watch the Part 1 Presentation on YouTube](https://www.youtube.com/@Amosghost)
 
 ---
 

@@ -28,9 +28,9 @@ namespace CybersecurityChatbot
             Console.WriteLine(@"  _____ __   __ ____  ______ _____ ");
             Console.WriteLine(@" / ____|\ \ / /|  _ \|  ____|  __ \");
             Console.WriteLine(@"| |      \ V / | |_) | |__  | |__) |");
-            Console.WriteLine(@"| |       > <  |  _ <|  __| |  _  /");
-            Console.WriteLine(@"| |____  / . \ | |_) | |____| | \ \");
-            Console.WriteLine(@" \_____|/_/ \_\|____/|______|_|  \_\");
+            Console.WriteLine(@"| |       \ /  |  _ <|  __| |  _  /");
+            Console.WriteLine(@"| |____  / /   | |_) | |____| | \ \");
+            Console.WriteLine(@" \_____|/_/    |____/|______|_|  \_\");
             Console.WriteLine();
 
     Console.ForegroundColor = ConsoleColor.DarkCyan;
