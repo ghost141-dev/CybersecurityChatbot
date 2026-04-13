@@ -3,11 +3,12 @@ using System.Collections.Generic;
 
 namespace CybersecurityChatbot
 {
-    
+
     // Handles all keyword matching and response generation for the chatbot.
     //Contains a dictionary of cybersecurity topics, each with multiple
     // possible responses that are selected randomly to keep interactions varied.
-   
+    //this is where the chatbot's "knowledge base" lives — the core logic for understanding user input and generating helpful responses.
+
     public class ResponseEngine
     {
         // ── Random number generator ───────────────────────────────────────

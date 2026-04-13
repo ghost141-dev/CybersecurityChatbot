@@ -4,6 +4,7 @@ namespace CybersecurityChatbot
 {
     //Main controller for the Cybersecurity Awareness Chatbot.
     // Coordinates startup (audio, logo, banner), user greeting, and the chat loop.
+    // This is where the magic happens — the main engine that runs the chatbot lifecycle.
     public class ChatbotEngine
     {
         // ── Dependencies ──────────────────────────────────────────────────
