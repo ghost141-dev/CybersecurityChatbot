@@ -9,6 +9,9 @@ on:
 jobs:
   build:
     runs-on: windows-latest   # Windows required for .NET Framework 4.8
+    env:
+      # Opt into Node.js 24 for javascript-based actions (avoids Node.js 20 deprecation warnings)
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
 
     steps:
       # 1. Check out the repository code
@@ -22,6 +25,11 @@ jobs:
 
       - name: Restore NuGet packages (solution)
         run: nuget restore CybersecurityChatbot.sln
+
+      - name: Setup MSBuild (Visual Studio)
+        uses: microsoft/setup-msbuild@v1
+        with:
+          vs-version: 'latest'
 
       - name: Show MSBuild location
         run: where msbuild || echo "msbuild not on PATH"
