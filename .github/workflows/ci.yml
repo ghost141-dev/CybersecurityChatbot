@@ -10,8 +10,9 @@ jobs:
   build:
     runs-on: windows-latest   # Windows required for .NET Framework 4.8
     env:
-      # Opt into Node.js 24 for javascript-based actions (avoids Node.js 20 deprecation warnings)
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+      # Allow use of Node.js 20 for javascript-based actions (opt out of Node.js 24)
+      # This keeps actions that expect Node 20 running for now.
+      ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: 'true'
 
     steps:
       # 1. Check out the repository code
